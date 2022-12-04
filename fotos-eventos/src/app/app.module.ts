@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CompinicialComponent } from './componente/compinicial/compinicial.component';
 import { BotaoComponent } from './componente/botao/botao.component';
+import { RodapeComponent } from './componente/rodape/rodape.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompinicialComponent,
-    BotaoComponent
+    BotaoComponent,
+    RodapeComponent
   ],
   imports: [
     BrowserModule,
@@ -19,4 +21,5 @@ import { BotaoComponent } from './componente/botao/botao.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

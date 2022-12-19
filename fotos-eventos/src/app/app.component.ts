@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import * as M from 'materialize-css';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent  implements AfterViewInit{
+  @ViewChild ('mobile') sidNav?: ElementRef;
+
   title = 'GERENCIADOR DE FOTOS E EVENTOS';
+
+  ngAfterViewInit(): void{
+    M.Sidenav.init(this.sidNav?.nativeElement);
+  }
 
   primeiro = {
     titulo: 'Novo Álbum',

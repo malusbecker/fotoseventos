@@ -1,0 +1,19 @@
+
+
+
+
+<div class="container">
+  <legend>Novo Álbum</legend>
+  <form>
+    <div class="mb-3">
+      <label for="txtName" class="form-label">Nome</label>
+      <input type="text" name="nome" [(ngModel)] = "fteventos.nome" class="form-control" id="txtNome" />
+    </div>
+    <div class="mb-3">
+      <label for="txtData" class="form-label">Data</label>
+      <input type="text" name="data" [(ngModel)] = "fteventos.data" class="form-control" id="txtData" />
+    </div>
+    <button type="button" (click)="create()" class="btn btn-primary">Create</button>
+  </form>
+</div>
+
